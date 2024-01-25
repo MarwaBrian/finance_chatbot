@@ -1,0 +1,668 @@
+{
+    "intents":[
+  {
+    "intent": "greeting",
+    "text": [
+       "Hi",
+       "How are you?",
+       "Is anyone there?",
+       "Hello",
+       "Good day",
+       "What's up",
+       "how are ya",
+       "heyy",
+       "whatsup",
+       "??? ??? ??"
+    ],
+    "responses": [
+       "Hello!",
+       "Good to see you again!",
+       "Hi there, how can I help?"
+    ],
+    "extension":  {
+        "function": "",
+        "entities": false,
+        "responses": []
+    },
+    "context":  {
+        "in": "",
+        "out": "GreetingUserRequest",
+        "clear": false
+    },
+    "entityType": "NA",
+    "entities": []
+ },
+  {
+    "intent": "goodbye",
+    "text": [
+       "cya",
+       "see you",
+       "bye bye",
+       "See you later",
+       "Goodbye",
+       "I am Leaving",
+       "Bye",
+       "Have a Good day",
+       "talk to you later",
+       "ttyl",
+       "i got to go",
+       "gtg"
+    ],
+    "responses": [
+       "Sad to see you go :(",
+       "Talk to you later",
+       "Goodbye!",
+       "Come back soon"
+    ],
+    "extension":  {
+        "function": "",
+        "entities": false,
+        "responses": []
+    },
+    "context":  {
+        "in": "",
+        "out": "LeavingUserRequest",
+        "clear": false
+    },
+    "entityType": "NA",
+    "entities": []
+ },
+  {
+    "intent": "creator",
+    "text": [
+       "what is the name of your developers",
+       "what is the name of your creators",
+       "what is the name of the developers",
+       "what is the name of the creators",
+       "who created you",
+       "your developers",
+       "your creators",
+       "who are your developers",
+       "developers",
+       "you are made by",
+       "you are made by whom",
+       "who created you",
+       "who create you",
+       "creators",
+       "who made you",
+       "who designed you"
+    ],
+    "responses": [
+       "Wairimu and Marwa"
+    ],
+    "extension":  {
+        "function": "",
+        "entities": false,
+        "responses": []
+  },
+  "context":  {
+        "in": "",
+        "out": "AskingCreator",
+        "clear": true
+  },
+  "entityType": "NA",
+  "entities": []
+ },
+  {
+    "intent": "name",
+    "text": [
+       "name",
+       "your name",
+       "do you have a name",
+       "what are you called",
+       "what is your name",
+       "what should I call you",
+       "whats your name?",
+       "what are you",
+       "who are you",
+       "who is this",
+       "what am i chatting to",
+       "who am i taking to",
+       "what are you"
+    ],
+    "responses": [
+       "You can call me Finance Reader.",
+       "I'm Mind Reader",
+       "I am a Chatbot.",
+       "I am your helper"
+    ],
+    "extension":  {
+        "function": "",
+        "entities": false,
+        "responses": []
+    },
+    "context":  {
+        "in": "",
+        "out": "AskingMyName",
+        "clear": true
+    },
+    "entityType": "NA",
+    "entities": []
+ },
+  {
+    "intent": "random",
+    "text": [
+       "I love you",
+       "Will you marry me",
+       "Do you love me"
+    ],
+    "responses": [
+       "I am not program for this, please ask appropriate query"
+    ],
+    "extension":  {
+        "function": "",
+        "entities": false,
+        "responses": []
+    },
+    "context":  {
+        "in": "",
+        "out": "Inappropriate",
+        "clear": true
+    },
+    "entityType": "NA",
+    "entities": []
+ },
+ {
+   "intent": "banking_info",
+   "text": [
+     "What are the banking hours?",
+     "When is the bank open?",
+     "Tell me the working hours of the bank.",
+     "What time does the bank close?",
+     "When can I visit the branch?",
+     "Banking hours in Kenya",
+     "Operating hours of the bank",
+     "When are you guys open?",
+     "Types of banking accounts in Kenya",
+     "Tell me about account types",
+     "What kinds of accounts do you offer?",
+     "Explain different banking accounts",
+     "Can you provide information about savings accounts?",
+     "Tell me about current accounts in Kenya",
+     "Do you have fixed deposit accounts?",
+     "What is the minimum balance for a savings account?",
+     "Are there fees associated with current accounts?",
+     "Tell me more about the benefits of fixed deposit accounts."
+   ],
+   "responses": [
+     "Our banking hours are from Monday to Friday, 9:00 AM to 4:00 PM.",
+     "The bank is open on weekdays from 9:00 AM to 4:00 PM.",
+     "You can visit the branch between 9:00 AM and 4:00 PM from Monday to Friday.",
+     "Our operating hours are from 9:00 AM to 4:00 PM on weekdays.",
+     "We are open Monday through Friday, 9:00 AM to 4:00 PM.",
+     "In Kenya, we offer various types of banking accounts tailored to your needs.",
+     "Our banking services include savings accounts, current accounts, and fixed deposit accounts.",
+     "Savings accounts are designed to help you save and earn interest on your deposits.",
+     "Current accounts provide convenient and flexible access to your funds for daily transactions.",
+     "Consider exploring our fixed deposit accounts for higher interest rates with a fixed term commitment.",
+     "For a savings account, the minimum balance required is Ksh 1,000, and it comes with no monthly fees.",
+     "Current accounts have varying fee structures based on usage, and we offer different plans to suit your needs.",
+     "Fixed deposit accounts offer competitive interest rates and require a minimum deposit of Ksh 10,000 for a fixed term.",
+     "Benefits of our fixed deposit accounts include guaranteed returns, capital preservation, and financial stability.",
+     "Feel free to ask more specific questions about account features, interest rates, or any other details you're interested in."
+   ],
+   "extension": {
+     "function": "",
+     "entities": false,
+     "responses": []
+   },
+   "context": {
+     "in": "",
+     "out": "InquiringAboutBankingInfo",
+     "clear": true
+   },
+   "entityType": "NA",
+   "entities": []
+ },
+ {
+   "intent": "online_banking_info",
+   "text": [
+     "How can I contact customer support?",
+     "Tell me about customer service",
+     "How do I reach your support team?",
+     "What is your customer helpline?",
+     "Online banking assistance",
+     "Help with online banking",
+     "Tell me about your online services",
+     "What types of cards do you offer?",
+     "Tell me about your credit cards",
+     "What are the features of your debit cards?",
+     "Can you provide information on prepaid cards?",
+     "Do you offer virtual cards?",
+     "How can I apply for a credit card?",
+     "Steps to activate online banking",
+     "Is online banking secure?",
+     "Lost my card, what should I do?",
+     "Are there transaction limits on debit cards?",
+     "Tell me about your rewards program"
+   ],
+   "responses": [
+     "Our customer support team is available 24/7. You can reach us at [customer support phone number] or [customer support email].",
+     "For assistance, contact our customer service team through our helpline or email. We are here to help!",
+     "Online banking assistance is available through our website and mobile app. You can manage your accounts, pay bills, and more.",
+     "We offer various types of cards to suit your needs. These include credit cards, debit cards, prepaid cards, and virtual cards.",
+     "Our credit cards come with attractive rewards, cashback offers, and low-interest rates. Explore our range to find the one that fits you best.",
+     "Debit cards provide easy access to your funds, with features such as online transactions, ATM withdrawals, and contactless payments.",
+     "Prepaid cards offer a convenient and secure way to manage your spending. Load funds onto the card and use it like a debit card.",
+     "Virtual cards are a secure option for online transactions. They are generated digitally and can be used for online purchases.",
+     "To apply for a credit card, visit our website or mobile app. The application process is simple and straightforward.",
+     "Activate online banking by logging in to your account on our website or mobile app. Follow the on-screen instructions for activation.",
+     "Rest assured, our online banking platform is secure. We use advanced encryption technologies to protect your financial information.",
+     "If you've lost your card, contact our customer support immediately to report it. We will assist you in securing your account.",
+     "Debit cards may have transaction limits for security purposes. You can check your card terms or contact customer support for details.",
+     "Our rewards program offers exciting benefits, including cashback, travel rewards, and discounts. Explore the rewards available with your card.",
+     "Feel free to ask more specific questions about our services, cards, or any other banking-related queries."
+   ],
+   "extension": {
+     "function": "",
+     "entities": false,
+     "responses": []
+   },
+   "context": {
+     "in": "",
+     "out": "InquiringAboutOnlineBanking",
+     "clear": true
+   },
+   "entityType": "NA",
+   "entities": []
+ },
+ {
+   "intent": "transaction_fees",
+   "text": [
+     "What are the transaction fees for online transfers?",
+     "Tell me about fees for ATM withdrawals",
+     "Are there charges for international transactions?",
+     "Explain the transaction fees on credit cards",
+     "Do you charge for balance inquiries?",
+     "Tell me about the fees associated with wire transfers",
+     "What are the charges for insufficient funds?",
+     "Any fees for using mobile banking services?",
+     "Explain the fees on cash deposits",
+     "Are there penalties for late credit card payments?",
+     "Tell me about the fees for checkbook requests",
+     "Any charges for stopping a payment?",
+     "Explain the fees on account overdrafts",
+     "What is the cost of getting a replacement card?",
+     "Tell me about inactivity fees on accounts",
+     "Are there charges for account statements?",
+     "Explain the fees associated with account closures"
+   ],
+   "responses": [
+     "Transaction fees for online transfers depend on the type of transfer and destination. You can find detailed information on our website or contact customer support.",
+     "ATM withdrawal fees may vary based on the ATM network. Check your account terms or use ATMs within our network to avoid additional charges.",
+     "For international transactions, currency conversion and international transaction fees may apply. Review your card terms or contact us for specifics.",
+     "Credit card transaction fees can include annual fees, cash advance fees, and balance transfer fees. Refer to your card agreement for details on each type of fee.",
+     "Balance inquiries at our ATMs are usually free. However, using ATMs outside our network may incur additional fees. Check your account terms for details.",
+     "Wire transfer fees depend on the type of transfer and destination. You can find detailed information on our website or contact customer support.",
+     "Insufficient funds may result in overdraft fees. Check your account terms for the specific fee amount and any policies related to insufficient funds.",
+     "Mobile banking services are typically free, but data charges from your mobile carrier may apply. Review your mobile banking terms for details.",
+     "Cash deposit fees may apply depending on the deposit method. Check your account terms or contact us for details on fees associated with cash deposits.",
+     "Penalties for late credit card payments may include late fees and interest charges. Refer to your credit card agreement for details on late payment fees.",
+     "Checkbook request fees may vary. Review your account terms or contact customer support for information on fees associated with ordering a checkbook.",
+     "Stopping a payment may incur fees. Check your account terms or contact us for details on charges associated with stopping payments.",
+     "Account overdraft fees may apply if you exceed your available balance. Review your account terms for details on overdraft fees and policies.",
+     "Replacement card fees may apply for lost or damaged cards. Check your account terms or contact us for information on the cost of getting a replacement card.",
+     "Inactivity fees may apply to dormant accounts. Check your account terms for details on inactivity fees and any conditions for avoiding them.",
+     "Account statements are generally provided free of charge, but additional copies may incur fees. Review your account terms for details on statement-related fees.",
+     "Account closure fees may apply if you close your account within a certain period. Check your account terms or contact us for details on account closure fees."
+   ],
+   "extension": {
+     "function": "",
+     "entities": false,
+     "responses": []
+   },
+   "context": {
+     "in": "",
+     "out": "InquiringAboutTransactionFees",
+     "clear": true
+   },
+   "entityType": "NA",
+   "entities": []
+ },
+ {
+   "intent": "banking_services",
+   "text": [
+     "Tell me about the services you offer",
+     "What are the different banking services available?",
+     "Explain your online banking features",
+     "Do you provide investment services?",
+     "Tell me about your loan offerings",
+     "What insurance services do you offer?",
+     "Explain your mobile banking options",
+     "Tell me about your savings account features",
+     "Do you offer business banking services?",
+     "What are your wealth management services?",
+     "Tell me about your mortgage options",
+     "Explain your retirement planning services",
+     "Do you provide credit card services?",
+     "Tell me about your educational loan offerings",
+     "What are your foreign exchange services?",
+     "Explain your digital wallet services"
+   ],
+   "responses": [
+     "We offer a comprehensive range of banking services to meet your financial needs. This includes savings and checking accounts, loans, credit cards, and more.",
+     "Our online banking features include account management, fund transfers, bill payments, and secure access to your financial information 24/7.",
+     "Explore our investment services for a variety of options, including mutual funds, stocks, bonds, and retirement accounts. Our financial experts can assist you in making informed decisions.",
+     "Whether you're looking for a personal loan, home loan, or auto loan, we have a variety of lending options tailored to suit your requirements. Check our website for details.",
+     "Protect your future with our insurance services. We offer life insurance, health insurance, and property insurance to ensure you and your assets are covered.",
+     "Bank on the go with our mobile banking options. Access your accounts, pay bills, and manage your finances from the convenience of your mobile device.",
+     "Our savings accounts come with competitive interest rates, convenient access, and features like overdraft protection. Explore the benefits of saving with us.",
+     "For businesses, we provide a range of banking solutions, including business accounts, loans, and merchant services. Contact our business banking team for personalized assistance.",
+     "Explore our wealth management services for personalized financial planning, investment advice, and retirement planning. Secure your financial future with our expert guidance.",
+     "If you're considering a home, our mortgage options can help make your dream a reality. Explore our mortgage services, including home purchase and refinancing options.",
+     "Plan for a comfortable retirement with our retirement planning services. We offer retirement accounts, investment advice, and personalized planning to help you achieve your retirement goals.",
+     "Our credit card services come with various benefits, including rewards programs, cashback offers, and low-interest rates. Choose a card that suits your lifestyle and spending habits.",
+     "Invest in your education with our educational loan offerings. We provide loans for tuition, books, and other education-related expenses with flexible repayment options.",
+     "For foreign exchange services, we offer currency exchange, international wire transfers, and travel money cards. Ensure smooth financial transactions globally with our services.",
+     "Experience the convenience of cashless transactions with our digital wallet services. Use your mobile device to make payments, manage expenses, and enjoy a seamless banking experience."
+   ],
+   "extension": {
+     "function": "",
+     "entities": false,
+     "responses": []
+   },
+   "context": {
+     "in": "",
+     "out": "InquiringAboutBankingServices",
+     "clear": true
+   },
+   "entityType": "NA",
+   "entities": []
+ },
+ {
+   "intent": "budgeting",
+   "text": [
+     "How can I create a personal budget?",
+     "Tell me about budgeting tips",
+     "Explain the importance of budgeting",
+     "How do I manage my expenses with a budget?",
+     "Give me budgeting advice for beginners",
+     "What are the key components of a successful budget?",
+     "Tell me about budgeting tools and apps",
+     "How can I stick to my budget?",
+     "Do you have tips for saving money through budgeting?",
+     "Explain the 50/30/20 rule for budgeting",
+     "How often should I review and update my budget?",
+     "What are some common budgeting mistakes to avoid?",
+     "Tell me about budgeting for a small business",
+     "Explain zero-based budgeting",
+     "What is the envelope budgeting method?",
+     "Do you have tips for budgeting as a freelancer?"
+   ],
+   "responses": [
+     "Creating a personal budget involves listing your income, categorizing expenses, and allocating funds for each category. It helps you manage your finances effectively.",
+     "Budgeting tips include tracking your spending, setting realistic goals, and creating an emergency fund. Consistency is key to successful budgeting.",
+     "Budgeting is crucial for financial stability. It helps you control spending, save for goals, and build a strong financial foundation.",
+     "To manage expenses with a budget, categorize spending, prioritize needs over wants, and review your budget regularly to make necessary adjustments.",
+     "For budgeting beginners, start by tracking your spending, setting specific goals, and gradually adjusting your budget as you become more comfortable.",
+     "Key components of a successful budget include income, fixed expenses, variable expenses, savings, and debt repayment. Each category plays a vital role.",
+     "Budgeting tools and apps like Mint, YNAB, or PocketGuard can help automate tracking, categorizing expenses, and providing insights into your financial habits.",
+     "Sticking to a budget requires discipline. Set realistic goals, avoid impulse spending, and regularly review your progress to stay on track.",
+     "Saving money through budgeting involves identifying areas to cut costs, negotiating bills, and prioritizing saving goals. Allocate a portion of your income to savings.",
+     "The 50/30/20 rule suggests allocating 50% of income to needs, 30% to wants, and 20% to savings. It provides a simple guideline for budgeting.",
+     "Review and update your budget regularly, preferably monthly. This allows you to adapt to changing circumstances and ensure your budget aligns with your goals.",
+     "Common budgeting mistakes to avoid include underestimating expenses, neglecting emergency funds, and not adjusting the budget when circumstances change.",
+     "Budgeting for a small business involves forecasting revenue, tracking expenses, and setting financial goals. It's essential for business sustainability and growth.",
+     "Zero-based budgeting requires assigning every dollar a purpose, ensuring that income minus expenses equals zero. It encourages a detailed look at spending habits.",
+     "The envelope budgeting method involves allocating cash to envelopes for specific spending categories. Once an envelope is empty, you stop spending in that category.",
+     "As a freelancer, budgeting involves irregular income. Create a detailed budget, prioritize saving, and set aside funds for taxes and business expenses."
+   ],
+   "extension": {
+     "function": "",
+     "entities": false,
+     "responses": []
+   },
+   "context": {
+     "in": "",
+     "out": "InquiringAboutBudgeting",
+     "clear": true
+   },
+   "entityType": "NA",
+   "entities": []
+ },
+ {
+   "intent": "corporate_finance_strategies",
+   "text": [
+     "What are strategic financial decisions for businesses?",
+     "Tell me about corporate finance strategies",
+     "Explain the importance of financial strategy in business",
+     "How can businesses optimize their capital structure?",
+     "Tell me about mergers and acquisitions in corporate finance",
+     "What factors should a company consider in mergers and acquisitions?",
+     "Explain the role of capital structure in financial planning",
+     "How do businesses make informed financial decisions?",
+     "Tell me about risk management in corporate finance",
+     "What are the key elements of a successful financial strategy?",
+     "How can companies raise capital for expansion?",
+     "Tell me about debt financing versus equity financing",
+     "Explain the concept of leveraged buyouts",
+     "What role does financial planning play in corporate success?",
+     "Tell me about divestiture strategies in corporate finance",
+     "How do businesses evaluate investment opportunities?"
+   ],
+   "responses": [
+     "Strategic financial decisions for businesses involve choices related to investments, financing, and dividend policies. These decisions impact long-term success and profitability.",
+     "Corporate finance strategies encompass financial planning, risk management, and decisions regarding capital structure. These strategies are crucial for achieving business goals.",
+     "Financial strategy in business is essential for aligning financial goals with overall business objectives. It helps optimize resource allocation and enhance shareholder value.",
+     "Optimizing capital structure involves finding the right mix of debt and equity to fund operations. This helps minimize the cost of capital and maximize shareholder value.",
+     "Mergers and acquisitions involve combining or acquiring companies to achieve strategic objectives. This can include market expansion, cost synergies, and increased competitiveness.",
+     "Factors to consider in mergers and acquisitions include due diligence, cultural fit, regulatory compliance, and the potential for synergies in operations and market presence.",
+     "Capital structure plays a vital role in financial planning by determining the mix of debt and equity used to finance operations. It influences a company's risk and cost of capital.",
+     "Businesses make informed financial decisions by conducting thorough analysis, considering risk factors, and aligning decisions with long-term strategic goals.",
+     "Risk management in corporate finance involves identifying, assessing, and mitigating risks that could impact a company's financial health and overall performance.",
+     "Key elements of a successful financial strategy include clear goal-setting, effective risk management, optimal capital structure, and adaptability to changing market conditions.",
+     "Companies can raise capital for expansion through methods such as issuing stocks, obtaining loans, or seeking venture capital. The choice depends on the company's financial strategy.",
+     "Debt financing involves borrowing funds, while equity financing involves issuing shares. The choice between them depends on factors like risk tolerance and cost of capital.",
+     "Leveraged buyouts involve acquiring a company using a significant amount of borrowed funds. This strategy aims to increase returns for investors.",
+     "Financial planning plays a crucial role in corporate success by ensuring effective resource allocation, risk management, and alignment with strategic objectives.",
+     "Divestiture strategies involve selling or spinning off business units. This can help streamline operations, improve focus, and enhance shareholder value.",
+     "Businesses evaluate investment opportunities by considering factors like return on investment, risk, market trends, and alignment with overall business strategy."
+   ],
+   "extension": {
+     "function": "",
+     "entities": false,
+     "responses": []
+   },
+   "context": {
+     "in": "",
+     "out": "InquiringAboutCorporateFinanceStrategies",
+     "clear": true
+   },
+   "entityType": "NA",
+   "entities": []
+ },
+ {
+   "intent": "financial_statements",
+   "text": [
+     "What is an income statement in financial terms?",
+     "Tell me about the components of an income statement",
+     "Explain the purpose of a balance sheet",
+     "What information does a balance sheet provide?",
+     "How does a cash flow statement differ from other financial statements?",
+     "Tell me about the sections of a cash flow statement",
+     "What is the significance of net income on financial statements?",
+     "How can I interpret an income statement for a company?",
+     "Explain the key metrics in analyzing a balance sheet",
+     "How does a cash flow statement reflect a company's financial health?",
+     "Tell me about the relationship between the three financial statements",
+     "What are the limitations of financial statements?",
+     "How do investors use financial statements for decision-making?",
+     "Tell me about common financial ratios used in analysis",
+     "Explain the concept of Earnings Before Interest, Taxes, Depreciation, and Amortization (EBITDA)",
+     "What role do footnotes play in financial statements?"
+   ],
+   "responses": [
+     "An income statement, also known as a profit and loss statement, summarizes a company's revenues, expenses, and profits over a specific period.",
+     "Components of an income statement include revenue, cost of goods sold (COGS), gross profit, operating expenses, net income, and earnings per share (EPS).",
+     "A balance sheet provides a snapshot of a company's financial position at a specific point in time. It presents assets, liabilities, and shareholders' equity.",
+     "A balance sheet includes information on a company's assets (such as cash, inventory), liabilities (debts, payables), and shareholders' equity (common stock, retained earnings).",
+     "A cash flow statement shows how changes in balance sheet accounts and income affect cash and cash equivalents. It highlights the sources and uses of cash.",
+     "Sections of a cash flow statement include operating activities, investing activities, and financing activities, providing insights into a company's cash movements.",
+     "Net income on financial statements represents the company's total earnings after deducting expenses. It is a key indicator of profitability.",
+     "Interpreting an income statement involves analyzing trends, comparing with industry benchmarks, and assessing the impact of expenses on profitability.",
+     "Key metrics in analyzing a balance sheet include the current ratio, quick ratio, debt-to-equity ratio, and return on equity (ROE). These metrics assess liquidity, solvency, and profitability.",
+     "A cash flow statement reflects a company's ability to generate cash. Positive cash flow is crucial for operational sustainability, debt repayment, and growth.",
+     "The income statement, balance sheet, and cash flow statement are interconnected. Net income from the income statement affects equity on the balance sheet and cash on the cash flow statement.",
+     "Limitations of financial statements include historical information, reliance on estimates, and the omission of certain qualitative factors.",
+     "Investors use financial statements for decision-making by assessing a company's financial health, profitability, and potential risks before making investment choices.",
+     "Common financial ratios used in analysis include the debt-to-equity ratio, price-to-earnings ratio (P/E), and return on assets (ROA). These ratios aid in evaluating a company's performance.",
+     "EBITDA is a measure of a company's operating performance, excluding interest, taxes, depreciation, and amortization. It provides insight into core profitability.",
+     "Footnotes in financial statements provide additional context and details, explaining accounting policies, assumptions, and potential risks that may not be evident from the main statements."
+   ],
+   "extension": {
+     "function": "",
+     "entities": false,
+     "responses": []
+   },
+   "context": {
+     "in": "",
+     "out": "InquiringAboutFinancialStatements",
+     "clear": true
+   },
+   "entityType": "NA",
+   "entities": []
+ },
+ {
+   "intent": "business_loans",
+   "text": [
+     "What are the different types of business loans?",
+     "Tell me about term loans for businesses",
+     "Explain the concept of a business line of credit",
+     "What are SBA loans, and how do they work?",
+     "Tell me about equipment financing for businesses",
+     "Explain the eligibility criteria for business loans",
+     "How can a startup qualify for a business loan?",
+     "Tell me about small business grants and loans",
+     "What is invoice financing, and how does it benefit businesses?",
+     "Explain the process of applying for a business loan",
+     "Tell me about the interest rates on business loans",
+     "What collateral is typically required for business loans?",
+     "How do lenders assess the creditworthiness of a business for a loan?",
+     "Tell me about the repayment terms for business loans",
+     "What are the advantages of securing a business loan for expansion?",
+     "Explain the role of personal credit in business loan applications"
+   ],
+   "responses": [
+     "Different types of business loans include term loans, business lines of credit, SBA loans, equipment financing, invoice financing, and small business grants.",
+     "Term loans for businesses provide a lump sum amount that is repaid over a set period with fixed or variable interest rates. They are suitable for various business needs.",
+     "A business line of credit offers a flexible borrowing option where a company can access funds up to a predetermined limit. Interest is paid only on the amount used.",
+     "SBA loans, backed by the Small Business Administration, offer favorable terms and lower down payments. They include options like 7(a) and 504 loans to support small businesses.",
+     "Equipment financing allows businesses to purchase equipment with the financed amount serving as collateral. It's a specialized loan for acquiring machinery or technology.",
+     "Eligibility criteria for business loans vary but often include factors like credit score, business revenue, time in operation, and the purpose of the loan.",
+     "Startups can qualify for business loans by showcasing a solid business plan, demonstrating market potential, and having a clear strategy for utilizing the loan funds.",
+     "Small business grants and loans may be available through government programs, nonprofits, or private institutions. They can provide financial support without the need for repayment.",
+     "Invoice financing allows businesses to get immediate cash by selling their outstanding invoices to a lender at a discount. It improves cash flow and helps with working capital.",
+     "Applying for a business loan involves gathering necessary documentation, such as financial statements, business plans, and credit history, and submitting them to a lender.",
+     "Interest rates on business loans vary based on the type of loan, lender, and the borrower's creditworthiness. Rates can be fixed or variable depending on the loan agreement.",
+     "Collateral for business loans may include assets like real estate, equipment, or inventory. The type and value of collateral depend on the loan amount and terms.",
+     "Lenders assess creditworthiness by reviewing the business and personal credit history, financial statements, cash flow, and the overall health and stability of the business.",
+     "Repayment terms for business loans include the loan duration, interest rates, and the frequency of payments. Terms can range from short-term to long-term depending on the loan type.",
+     "Securing a business loan for expansion can provide access to capital for hiring, purchasing inventory, marketing, and scaling operations. It fosters growth and enhances competitiveness.",
+     "Personal credit often plays a role in business loan applications, especially for small businesses. Lenders may consider the owner's credit history when evaluating loan eligibility."
+   ],
+   "extension": {
+     "function": "",
+     "entities": false,
+     "responses": []
+   },
+   "context": {
+     "in": "",
+     "out": "InquiringAboutBusinessLoans",
+     "clear": true
+   },
+   "entityType": "NA",
+   "entities": []
+ },
+ {
+   "intent": "kenyan_banks_info",
+   "text": [
+     "Tell me about banks in Kenya",
+     "Give me information on Kenyan banks",
+     "What are the major banks in Kenya?",
+     "Tell me about Equity Bank in Kenya",
+     "Give details about Kenya Commercial Bank (KCB)",
+     "Tell me about Co-operative Bank of Kenya",
+     "Give information on Standard Chartered Bank Kenya",
+     "Tell me about Barclays Bank of Kenya (Absa Kenya)",
+     "Give details about CfC Stanbic Bank in Kenya",
+     "Tell me about Diamond Trust Bank (DTB)",
+     "Give information on NCBA Bank",
+     "Tell me about Absa Bank Kenya",
+     "Give details about I&M Bank in Kenya",
+     "What are the banking services offered in Kenya?",
+     "Tell me about the financial products in Kenyan banks"
+   ],
+   "responses": [
+     "Kenya has several prominent banks, including Equity Bank, Kenya Commercial Bank (KCB), Co-operative Bank of Kenya, Standard Chartered Bank Kenya, Absa Bank Kenya, CfC Stanbic Bank, Diamond Trust Bank (DTB), NCBA Bank, and I&M Bank.",
+     "Equity Bank is known for its focus on financial inclusion, while KCB is one of the oldest and largest banks in Kenya. Co-operative Bank operates with a cooperative business model, and Standard Chartered Bank is part of a global banking group.",
+     "Absa Bank Kenya, formerly Barclays Bank Kenya, is part of Absa Group Limited. CfC Stanbic Bank is a member of the Standard Bank Group, and Diamond Trust Bank operates regionally in East Africa.",
+     "NCBA Bank was formed through the merger of NIC Bank and Commercial Bank of Africa (CBA). I&M Bank is a privately owned bank with operations in Kenya and other East African countries.",
+     "These banks offer various financial services, including retail and corporate banking, investment banking, mobile banking, loans, and wealth management.",
+     "For detailed and up-to-date information, it's recommended to visit the official websites of the respective banks or consult recent financial reports."
+   ],
+   "extension": {
+     "function": "",
+     "entities": false,
+     "responses": []
+   },
+   "context": {
+     "in": "",
+     "out": "InquiringAboutKenyanBanks",
+     "clear": true
+   },
+   "entityType": "NA",
+   "entities": []
+ },
+ {
+   "intent": "kcb_bank_info",
+   "text": [
+     "Tell me about Kenya Commercial Bank (KCB)",
+     "Give me information on KCB Bank in Kenya",
+     "What services does KCB Bank offer?",
+     "Tell me about KCB's history",
+     "Give details about KCB's branches in Kenya",
+     "What are the products provided by KCB Bank?",
+     "Tell me about KCB's digital banking services",
+     "Give information on KCB's corporate banking",
+     "What are the eligibility criteria for KCB loans?",
+     "Tell me about KCB's involvement in community initiatives",
+     "Give details about KCB's mobile banking options",
+     "Tell me about KCB's international presence",
+     "What sets KCB apart from other banks in Kenya?",
+     "Give information on KCB's online banking platform",
+     "Tell me about KCB's customer support services"
+   ],
+   "responses": [
+     "Kenya Commercial Bank (KCB) is one of the largest and oldest banks in Kenya, offering a wide range of financial services.",
+     "KCB Bank has a rich history, playing a significant role in the country's banking sector. It has a strong presence with numerous branches across Kenya and beyond.",
+     "KCB Bank provides various financial services, including retail and corporate banking, investment banking, trade finance, and mobile banking.",
+     "Founded in 1896, KCB has a long-standing history of serving the financial needs of individuals, businesses, and communities in Kenya.",
+     "KCB has an extensive network of branches and ATMs across Kenya, making its services accessible to a broad customer base.",
+     "The bank offers a diverse range of products, including savings accounts, loans, credit cards, insurance, and investment options.",
+     "KCB provides digital banking services, allowing customers to manage their accounts, transfer funds, and access various banking services online.",
+     "In the realm of corporate banking, KCB offers tailored financial solutions to businesses, including corporate loans, trade finance, and treasury services.",
+     "Eligibility criteria for KCB loans may include factors such as creditworthiness, business stability, and the purpose of the loan.",
+     "KCB is actively involved in community initiatives, supporting education, healthcare, and other social causes as part of its corporate social responsibility.",
+     "KCB's mobile banking options allow customers to perform banking transactions conveniently using their mobile phones.",
+     "While KCB primarily operates in Kenya, it has an international presence through correspondent banking relationships and services for global transactions.",
+     "KCB stands out for its long history, extensive branch network, diverse product offerings, and commitment to community development.",
+     "KCB's online banking platform provides customers with secure and convenient access to their accounts, enabling various banking transactions.",
+     "For customer support, KCB offers assistance through its branches, customer service hotline, and online channels to address inquiries and concerns."
+   ],
+   "extension": {
+     "function": "",
+     "entities": false,
+     "responses": []
+   },
+   "context": {
+     "in": "",
+     "out": "InquiringAboutKCBBank",
+     "clear": true
+   },
+   "entityType": "NA",
+   "entities": []
+ }
+]         
+}
+
+  
