@@ -1,11 +1,11 @@
 from transformers import GPTNeoForCausalLM, GPT2Tokenizer, Trainer, TrainingArguments
 from datasets import load_dataset
 
-# Load pre-trained model and tokenizer
+#initialize model and tokenizer
 model = GPTNeoForCausalLM.from_pretrained('EleutherAI/gpt-neo-1.3B')
 tokenizer = GPT2Tokenizer.from_pretrained('EleutherAI/gpt-neo-1.3B')
 
-# Load your dataset (intents.json)
+#load the file
 dataset = load_dataset('json', data_files={'train': './data/intents.json'})
 
 def tokenize_function(examples):

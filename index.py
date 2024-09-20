@@ -1,12 +1,16 @@
-# Import necessary libraries
-import streamlit as st
+import pandas as pd
+import spacy
+import transformers 
 import requests
 import json
+from bs4 import BeautifulSoup
+import streamlit as st 
+import os
+from datasets import load_dataset
+from transformers import LlamaTokenizer, LlamaForCausalLM
 
-
-token_chacha = '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'
-# Hugging Face API settings
 # API_URL = "https://api-inference.huggingface.co/models/huggyllama/llama-7b" model was too big to be loaded via the standard api
+token_chacha = os.getenv('HF_TOKEN')
 API_URL = "https://api-inference.huggingface.co/models/EleutherAI/gpt-neo-1.3B"
 headers = {"Authorization": f"Bearer {token_chacha}"}
 
